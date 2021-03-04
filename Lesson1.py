@@ -1,0 +1,18 @@
+import time
+from selenium import webdriver
+options = webdriver.ChromeOptions()
+options.add_argument("--user-data-dir=C:\\Users\\Roman Pysanka\\AppData\\Local\\Google\\Chrome\\User Data")
+options.add_argument('--profile-directory=Default')
+driver = webdriver.Chrome(options=options)
+driver.set_window_size(1366, 768)
+driver.maximize_window()
+time.sleep(5)
+driver.get("https://stepik.org/lesson/25969/step/12")
+time.sleep(5)
+textarea = driver.find_element_by_css_selector(".textarea")
+textarea.send_keys("get()")
+time.sleep(5)
+submit_button = driver.find_element_by_css_selector(".submit-submission")
+submit_button.click()
+time.sleep(5)
+driver.quit()
