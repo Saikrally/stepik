@@ -1,3 +1,1 @@
-zxczx
-123
-123
+print('Hello')
