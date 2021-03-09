@@ -4,7 +4,7 @@ import unittest
 import pytest
 
 
-class TestLink(pytest.TestCase):
+class TestLink():
 
     def test_link1(self):
         link1 = "http://suninjuly.github.io/registration1.html"
