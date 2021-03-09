@@ -4,7 +4,7 @@ import unittest
 import pytest
 
 
-class TestLink(unittest.TestCase):
+class TestLink(pytest.TestCase):
 
     def test_link1(self):
         link1 = "http://suninjuly.github.io/registration1.html"
@@ -54,4 +54,4 @@ class TestLink(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()
+    pytest.main()
