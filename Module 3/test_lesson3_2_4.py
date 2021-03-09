@@ -34,7 +34,7 @@ class TestLink:
             
     def test_link2(self):
         try:
-            link2 = "http://suninjuly.github.io/registration2.html"
+            link2 = "http://suninjuly.github.io/registration1.html"
             browser = webdriver.Chrome()
             browser.get(link2)
             input1 = browser.find_element_by_css_selector(
@@ -54,7 +54,7 @@ class TestLink:
             time.sleep(2)
             welcome_text_elt = browser.find_element_by_tag_name("h1")
             welcome_text = welcome_text_elt.text
-            assert welcome_text == "Congratulations! You have successfully registered!", "Should be equal"
+            assert welcome_text == "Congratulations! You have successfully registered!1", "Should be equal"
         finally:
             time.sleep(5)
             browser.quit()
