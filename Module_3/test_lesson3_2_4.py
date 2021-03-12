@@ -29,6 +29,7 @@ class TestLink:
             welcome_text = welcome_text_elt.text
             assert welcome_text == "Congratulations! You have successfully registered!", "Should be equal"
         finally:
+            browser = webdriver.Chrome()
             time.sleep(5)
             browser.quit()
             
@@ -56,6 +57,7 @@ class TestLink:
             welcome_text = welcome_text_elt.text
             assert welcome_text == "Congratulations! You have successfully registered!1", "Should be equal"
         finally:
+            browser = webdriver.Chrome()
             time.sleep(5)
             browser.quit()
 
