@@ -22,4 +22,5 @@ class TestAnswerPage:
         link = "https://stepik.org/lesson/236895/step/1"
         browser.get(link)
         browser.implicitly_wait(10)
-        browser.find_element_by_class_name("quiz-component ember-view").send_keys(str(answer))
+        browser.find_element_by_css_selector("textarea").send_keys(str(answer))
+
