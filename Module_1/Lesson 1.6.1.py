@@ -8,8 +8,7 @@ try:
     browser = webdriver.Chrome()
     browser.get(link)
 
-    input1 = browser.find_element_by_name("first_name")
-    input1.send_keys("Ivan")
+    browser.find_element_by_name("first_name").send_keys("Ivan")
     input2 = browser.find_element_by_name("last_name")
     input2.send_keys("Petrov")
     input3 = browser.find_element_by_class_name("form-control.city")
