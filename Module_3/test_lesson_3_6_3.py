@@ -7,17 +7,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-@pytest.fixture(scope="function")
-def browser():
-    print("\nstart browser for test..")
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    browser = webdriver.Chrome(options=options)
-    yield browser
-    print("\nquit browser..")
-    browser.quit()
-
-
 class TestAnswerPage:
 
     @pytest.mark.parametrize('siteid', ["236895", "236896", "236897", "236898", "236899", "236903", "236904", "236905"])
