@@ -5,5 +5,6 @@ time.sleep(30)
 
 def add_item_to_cart(browser):
     browser.get(link)
-    browser.find_element_by_class_name("btn btn-lg btn-primary btn-add-to-basket")
-    assert browser.find_element_by_class_name("btn btn-lg btn-primary btn-add-to-basket") == True
+    browser.find_element_by_class_name("btn btn-lg btn-primary btn-add-to-basket").click()
+    assert browser.find_element_by_class_name("btn btn-lg btn-primary btn-add-to-basket")
+
