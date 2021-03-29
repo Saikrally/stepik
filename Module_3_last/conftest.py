@@ -21,8 +21,9 @@ def browser(request):
         options = Options()
         options.add_experimental_option('prefs',
                                         {'intl.accept_languages': language})
-        options = webdriver.ChromeOptions()
         options.add_experimental_option('excludeSwitches', ['enable-logging'], )
+        """options = webdriver.ChromeOptions()
+        options.add_experimental_option('excludeSwitches', ['enable-logging'], )"""
         browser = webdriver.Chrome(options=options)
     elif browser_name == "firefox":
         fp = webdriver.FirefoxProfile()
