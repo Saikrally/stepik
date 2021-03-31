@@ -8,7 +8,7 @@ def pytest_addoption(parser):
                      default="chrome",
                      help="Choose browser: chrome or firefox")
     parser.addoption('--language', action='store',
-                     default="chrome",
+                     default="en",
                      help="Choose browser: chrome or firefox")
 
 
